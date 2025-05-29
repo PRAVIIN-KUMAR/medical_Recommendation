@@ -4,8 +4,7 @@ This Streamlit-based web app predicts diseases based on user symptoms and provid
 
 ## 🌐 Live Demo
 
-👉 [Click to View Live App](https://medicalrecommendation-jexzrafkwjcs9ccy8cvqfg.streamlit.app)  
-_Replace with your actual Streamlit Cloud deployment URL._
+👉 [Click to View Live App](https://medicalrecommendation-jexzrafkwjcs9ccy8cvqfg.streamlit.app)
 
 ---
 
