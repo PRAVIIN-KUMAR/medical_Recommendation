@@ -7,13 +7,13 @@ import numpy as np
 st.set_page_config(page_title="Medical Recommendation System", layout="wide")
 
 # Load the trained model and datasets
-rf = pickle.load(open(r'C:\Users\admin\Downloads\Praveen Project\my project\medical recommendation\rf_model.pkl', 'rb'))
-description = pd.read_csv(r'C:\Users\admin\Downloads\Praveen Project\my project\medical recommendation\DATA\description.csv')
-precautions = pd.read_csv(r'C:\Users\admin\Downloads\Praveen Project\my project\medical recommendation\DATA\precautions_df.csv')
-medications = pd.read_csv(r'C:\Users\admin\Downloads\Praveen Project\my project\medical recommendation\DATA\medications.csv')
-diets = pd.read_csv(r'C:\Users\admin\Downloads\Praveen Project\my project\medical recommendation\DATA\diets.csv')
-workout = pd.read_csv(r'C:\Users\admin\Downloads\Praveen Project\my project\medical recommendation\DATA\workout_df.csv')
-symptoms_df = pd.read_csv(r'C:\Users\admin\Downloads\Praveen Project\my project\medical recommendation\DATA\symtoms_df.csv')
+rf = pickle.load(open(r'\rf_model.pkl', 'rb'))
+description = pd.read_csv(r'\DATA\description.csv')
+precautions = pd.read_csv(r'\DATA\precautions_df.csv')
+medications = pd.read_csv(r'\DATA\medications.csv')
+diets = pd.read_csv(r'\DATA\diets.csv')
+workout = pd.read_csv(r'\DATA\workout_df.csv')
+symptoms_df = pd.read_csv(r'\DATA\symtoms_df.csv')
 
 symptoms_dict = {
     'itching': 0, 'skin rash': 1, 'nodal skin eruptions': 2, 'continuous sneezing': 3, 'shivering': 4, 'chills': 5,
