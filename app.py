@@ -7,13 +7,13 @@ import numpy as np
 st.set_page_config(page_title="Medical Recommendation System", layout="wide")
 
 # Load the trained model and datasets
-rf = pickle.load(open(r'medical_Recommendation\rf_model.pkl', 'rb'))
-description = pd.read_csv(r'medical_Recommendation\DATA\description.csv')
-precautions = pd.read_csv(r'medical_Recommendation\DATA\precautions_df.csv')
-medications = pd.read_csv(r'medical_Recommendation\DATA\medications.csv')
-diets = pd.read_csv(r'medical_Recommendation\DATA\diets.csv')
-workout = pd.read_csv(r'medical_Recommendation\DATA\workout_df.csv')
-symptoms_df = pd.read_csv(r'medical_Recommendation\DATA\symtoms_df.csv')
+rf = pickle.load(open('rf_model.pkl', 'rb'))
+description = pd.read_csv('DATA\description.csv')
+precautions = pd.read_csv('DATA\precautions_df.csv')
+medications = pd.read_csv('DATA\medications.csv')
+diets = pd.read_csv('DATA\diets.csv')
+workout = pd.read_csv('DATA\workout_df.csv')
+symptoms_df = pd.read_csv('DATA\symtoms_df.csv')
 
 symptoms_dict = {
     'itching': 0, 'skin rash': 1, 'nodal skin eruptions': 2, 'continuous sneezing': 3, 'shivering': 4, 'chills': 5,
