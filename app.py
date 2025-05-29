@@ -2,9 +2,6 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
-import os
-st.write("Current Working Directory:", os.getcwd())
-st.write("Files in Directory:", os.listdir())
 
 # Page configuration
 st.set_page_config(page_title="Medical Recommendation System", layout="wide")
