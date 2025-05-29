@@ -3,6 +3,11 @@ import pickle
 import pandas as pd
 import numpy as np
 
+import os
+st.write("Current Working Directory:", os.getcwd())
+st.write("Files in Working Directory:", os.listdir())
+st.write("Files in DATA folder:", os.listdir("DATA"))
+
 # Page configuration
 st.set_page_config(page_title="Medical Recommendation System", layout="wide")
 
