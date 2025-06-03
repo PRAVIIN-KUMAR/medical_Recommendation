@@ -7,13 +7,6 @@ import os
 # Page configuration
 st.set_page_config(page_title="Medical Recommendation System", layout="wide")
 
-# Show environment info for debugging
-
-if "DATA" in os.listdir():
-    st.write("Files in DATA folder:", os.listdir("DATA"))
-else:
-    st.error("DATA folder not found. Make sure it exists and is uploaded properly.")
-
 # Load the trained model and datasets with error handling
 try:
     rf = pickle.load(open('rf_model.pkl', 'rb'))
