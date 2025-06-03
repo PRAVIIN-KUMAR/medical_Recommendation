@@ -8,8 +8,7 @@ import os
 st.set_page_config(page_title="Medical Recommendation System", layout="wide")
 
 # Show environment info for debugging
-st.write("Current Working Directory:", os.getcwd())
-st.write("Files in Working Directory:", os.listdir())
+
 if "DATA" in os.listdir():
     st.write("Files in DATA folder:", os.listdir("DATA"))
 else:
